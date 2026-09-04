@@ -16,3 +16,15 @@ cd skriptimine
 
 d) tekita lokaalne repositoorium git süsteemi jaoks antud kaustas
 git init
+
+e) seo lokaalne repositoorium kaugrepositooriumiga (GitHubis)
+git remote add skriptimine git@github.com:andreeurm-debug/skriptimine.git
+
+f) lisa muudatused/failid indeksisse (staging area)
+git add git_kasutamine
+
+g) salvesta muudatused lokaalses repositooriumis (commit)
+git commit -m "Esimene commit - git kasutamise juhend"
+
+h) lükka muudatused kaugrepositooriumisse (push)
+git push -u skriptimine master
