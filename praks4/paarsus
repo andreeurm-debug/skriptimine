@@ -1,16 +1,17 @@
 #!/bin/bash
-# Skript kontrollib käsurea parameetripaarsust matemaatilise jäägiga
+# Skript kontrollib käsurea parameetri paarsust cut käsuga
 
-# Kontrollime, et parameetreid oleks täpselt 1
+# 1. Kontrollime, et parameetreid oleks täpselt 1
 if [ $# -ne 1 ]; then
     echo "Käivita see skript koos arvuga mille paarsus soovid kontrollida. Näiteks: ./paarsus 3"
     exit
 fi
 
-# Arvutame 2-ga jagamise jäägi otse käsurea parameetrist $1
-jaak=`expr $1 % 2`
+# 2. Võtame arvu viimase numbri cut abil
+viimane=$(echo $1 | cut -c -1)
 
-if [ $jaak -eq 0 ]; then
+# 3. Kontrollime, kas viimane number on paaris
+if [ $viimane -eq 0 ] || [ $viimane -eq 2 ] || [ $viimane -eq 4 ] || [ $viimane -eq 6 ] || [ $viimane -eq 8 ]; then
     echo "Antud arv on paaris"
 else
     echo "Antud arv on paaritu"
