@@ -1,0 +1,16 @@
+#!/bin/bash
+# Skript kontrollib käsurea parameetrina antud arvu paarsust
+
+# Kontrollime, kas parameetreid edastati täpselt üks ($# -ne 1)
+if [ $# -ne 1 ]; then
+    echo "Käivita see skript koos arvuga mille paarsus soovid kontrollida. Näiteks: ./paarsus 3"
+else
+    arv=$1
+    jaak=`expr $arv % 2`
+
+    if [ $jaak -eq 0 ]; then
+        echo "Antud arv on paaris"
+    else
+        echo "Antud arv on paaritu"
+    fi
+fi
