@@ -1,5 +1,5 @@
 #!/bin/bash
-# Skript arvutab vajaliku busside arvu vastavalt reisijate ja kohtade arvule
+# Skript arvutab mitu bussi on vaja reisijate vedamiseks
 
 echo -n "Sisesta reisijate arv: "
 read reisijad
@@ -7,7 +7,7 @@ read reisijad
 echo -n "Sisesta kohtade arv bussis: "
 read kohad
 
-# Arvutame täisbussid ja maha jäävad reisijad
+# Arvutame täisbusside arvu ja mahajäänute arvu
 bussid=`expr $reisijad / $kohad`
 jaak=`expr $reisijad % $kohad`
 
