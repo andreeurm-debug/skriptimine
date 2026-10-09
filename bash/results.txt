@@ -1,17 +1,116 @@
 ========================================
-Date: Fri Oct  9 11:01:19 AM EEST 2026
-Player: a
+Date: Fri Oct  9 10:40:11 AM EEST 2026
+Player: andree
 Player numbers:
-3
+5
+10
+20
+30
+40
+Lottery numbers:
+23
+31
+4
+25
+12
+Matches: 0
+Result: Seekord tabamusi ei olnud.
+========================================
+Date: Fri Oct  9 10:51:51 AM EEST 2026
+Player: 
+Player numbers:
+Lottery numbers:
+44
+49
+50
+33
+9
+Matches: 
+--- Kontrollime tulemusi ---
+0
+Result: 
+========================================
+Date: Fri Oct  9 10:53:15 AM EEST 2026
+Player: andree
+Player numbers:
+4
+6
+10
+33
+31
+Lottery numbers:
+4
+48
+32
+18
+33
+Matches: 
+--- Kontrollime tulemusi ---
+
+Kontrollin numbrit 4...
+TABAMUS!
+
+Kontrollin numbrit 6...
+Ei tabanud.
+
+Kontrollin numbrit 10...
+Ei tabanud.
+
+Kontrollin numbrit 33...
+TABAMUS!
+
+Kontrollin numbrit 31...
+Ei tabanud.
+2
+Result: 
+========================================
+Date: Fri Oct  9 10:56:28 AM EEST 2026
+Player: andree
+Player numbers:
+4
+1
+6
+10
+44
+Lottery numbers:
+18
+50
+35
+10
+25
+Matches: 
+--- Kontrollime tulemusi ---
+
+Kontrollin numbrit 4...
+Ei tabanud.
+
+Kontrollin numbrit 1...
+Ei tabanud.
+
+Kontrollin numbrit 6...
+Ei tabanud.
+
+Kontrollin numbrit 10...
+TABAMUS!
+
+Kontrollin numbrit 44...
+Ei tabanud.
+1
+Result: 
+========================================
+Date: Fri Oct  9 10:58:09 AM EEST 2026
+Player: andree
+Player numbers:
+4
 2
 5
-6
-7
+10
+33
 Lottery numbers:
-13
-21
-44
 3
-4
-Matches: 1
-Result: Üks tabamus.
+1
+41
+18
+9
+Matches: 0
+Result: Seekord tabamusi ei olnud.
