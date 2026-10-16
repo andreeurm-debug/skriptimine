@@ -1,0 +1,25 @@
+#!/bin/bash
+# Kasutajate lisamine koos juhusliku parooli genereerimisega
+
+if [ $# -ne 1 ]; then
+    echo "Kasutusjuhend: $0 kasutajad"
+    exit 1
+fi
+
+kasutajad=$1
+
+if [ -f "$kasutajad" -a -r "$kasutajad" ]; then
+    echo "Fail on korras"
+    for kasutajanimi in $(cat "$kasutajad")
+    do
+        useradd "$kasutajanimi" -m -s /bin/bash
+        if [ $? -eq 0 ]; then
+            parool=$(pwgen -s 8 1)
+            echo "$kasutajanimi:$parool" | chpasswd
+            echo "$kasutajanimi:$parool" >> loodud_kasutajad_paroolidega
+            echo "Kasutaja $kasutajanimi lisatud süsteemi."
+        fi
+    done
+else
+    echo "Probleem failiga $kasutajad"
+fi
