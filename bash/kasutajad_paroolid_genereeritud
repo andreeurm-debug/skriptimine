@@ -1,5 +1,12 @@
 #!/bin/bash
-# Kasutajate lisamine koos juhusliku parooli genereerimisega
+# Kasutajate lisamine koos root õiguste kontrolli ja paroolide genereerimisega
+
+kaivitav_kasutaja=$(whoami)
+
+if [ "$kaivitav_kasutaja" != "root" ]; then
+    echo "Sul ei ole õigust antud skripti käivitamiseks"
+    exit 1
+fi
 
 if [ $# -ne 1 ]; then
     echo "Kasutusjuhend: $0 kasutajad"
